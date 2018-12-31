@@ -6,6 +6,11 @@ var app = new Vue({
     count: 0,
     show: true
   },
+  computed: {
+    computedMessage: function () {
+      return this.message + '!'
+    }
+  },
   methods: {
     handleClick: function(event) {
       alert(event.target)
