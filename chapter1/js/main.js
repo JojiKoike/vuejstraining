@@ -8,12 +8,15 @@ var app = new Vue({
   },
   computed: {
     computedMessage: function () {
-      return this.message + '!'
+      return this.message + '!';
     }
+  },
+  created: function() {
+    console.log('created');
   },
   methods: {
     handleClick: function(event) {
-      alert(event.target)
+      alert(event.target);
     }
   }
 })
