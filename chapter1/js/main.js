@@ -20,5 +20,5 @@ var app = new Vue({
     }
   }
 })
-console.log(app.message)
-console.log(app.list)
+console.log(app.message);
+console.log(app.list);
