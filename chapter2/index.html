@@ -6,8 +6,12 @@
     <link href="./css/main.css" rel="stylesheet">
   </head>
   <body>
-    <div id="app">
-      <p>{{message}}</p>
+    <div id="app" v-bind:text-content.prop="message.value">
+      <p>{{message.value}}</p>
+      <p>{{message.value.length}}</p>
+      <p>{{list[2]}}</p>
+      <p>{{list[num]}}</p>
+      <input type="text" v-bind="message">
     </div>
     <script src="../node_modules/vue/dist/vue.js"></script>
     <script src="js/main.js"></script>
